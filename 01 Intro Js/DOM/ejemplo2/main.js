@@ -21,7 +21,7 @@ const formValidation = () => {
     } else {
         msg.innerHTML = "";
         input.style.border = "1px solid black"
-        // console.log("Hay data");
+        // cuonsole.log("Hay data");
         acceptData ();
     }
 };
