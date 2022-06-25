@@ -51,6 +51,13 @@ for (const propiedad in jon) {
 }
 
 // for (const interator of object) {}
-for (const interator of object) {
-    
+for (const elemento of numeros) {
+    console.log(elemento)
+}
+
+
+let cadena = "Hola Mundito";
+
+for (const caracter of cadena) {
+    console.log(caracter)
 }
