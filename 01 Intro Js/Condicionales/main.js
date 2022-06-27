@@ -102,3 +102,18 @@ switch (dia) {
   console.log("El día no existe");
     break;
 }
+
+const numeritos = [1,2,3,4,5,6,7,8,9,0];
+
+for (let i = 0; i < numeritos.length; i++) {
+  if (i === 5) {
+    // break; //Se corta y ya no continua
+  }
+  console.log(numeritos[i]);
+}
+for (let i = 0; i < numeritos.length; i++) {
+  if (i === 5) {
+    continue; //Se repite nuevamente desde el inicio
+  }
+  console.log(numeritos[i]);
+}
