@@ -71,8 +71,8 @@ const perro = {
     }
 }
 
-console.log(perro);
-perro.ladrar();
+// console.log(perro);
+// perro.ladrar();
 
 
 const dog = {
@@ -84,10 +84,36 @@ const dog = {
     }
 }
 
-console.log(dog);
-dog.ladrar();
+// console.log(dog);
+// dog.ladrar();
 
 
 
 // -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 // Parámetros REST & Operador Spread
+
+function sumar (a,b, ...c) {
+    let resultado = a+b;
+    
+    c.forEach(function (n){
+        resultado += n
+    });
+    return resultado;
+}
+
+console.log(sumar(1,2));
+console.log(sumar(1,2,3));
+console.log(sumar(1,2,3,4));
+console.log(sumar(1,2,3,4,5));
+console.log(sumar(1,2,3,4,5,6));
+
+
+// Operador Spread -_-_-_-_-_-_-_ Operador Spread
+
+ const arr1 = [1,2,3,4,5],
+    arr2 = [6,7,8,9,0];
+
+    console.log(arr1, arr2);
+
+    const arr3 = [...arr1, ...arr2];
+    console.log(arr3);
