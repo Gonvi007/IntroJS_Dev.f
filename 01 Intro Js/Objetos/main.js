@@ -55,3 +55,39 @@ console.log(Object.values(ale));
 console.log(ale.hasOwnProperty("nombre"));
 // Se puede usar para saber si existe esa propiedad
 console.log(ale.hasOwnProperty("nacimiento"));
+
+
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// Objetos Literales
+
+const nombre = "rAfITa", 
+    edad=4;
+
+const perro = {
+    nombre: nombre,
+    edad: edad,
+    ladrar: function () {
+        console.log("guauu guauu!!!")
+    }
+}
+
+console.log(perro);
+perro.ladrar();
+
+
+const dog = {
+    nombre,
+    edad,
+    raza: "Mamadisimo",
+    ladrar() {
+        console.log("guauu guauu guauu!!")
+    }
+}
+
+console.log(dog);
+dog.ladrar();
+
+
+
+// -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// Parámetros REST & Operador Spread
