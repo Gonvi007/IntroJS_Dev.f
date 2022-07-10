@@ -79,4 +79,31 @@ let x = 4,
 y = 2,
 pruebaXY = "Se espera que X siempre sea menor que Y";
 
-console.assert(x<y, x,y,pruebaXY);
+// console.assert(x<y, x,y,pruebaXY);
+
+console.log(Date());
+
+let fecha = new Date();
+console.log(fecha);
+// Día del mes
+console.log(fecha.getDate());
+// Día de la semana S L M M J V S -> 0 1 2 3 4 5 6
+console.log(fecha.getDate());
+// Mes Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic -> 0 1 2 3 4 5 6 7 8 9 10 11
+console.log(fecha.getMonth());
+console.log(fecha.getFullYear());
+console.log(fecha.getHours());
+console.log(fecha.getMinutes());
+console.log(fecha.getSeconds());
+console.log(fecha.getMilliseconds());
+console.log(fecha.toString());
+console.log(fecha.toDateString());
+console.log(fecha.toLocaleString());
+console.log(fecha.toLocaleDateString());
+console.log(fecha.toLocaleTimeString());
+console.log(fecha.getTimezoneOffset());
+console.log(fecha.getUTCDate());
+// Cuenta los segundos desde el 1ero de enero, primer hora
+console.log(Date.now());
+let cumplAlex = new Date(1999,4,10)
+console.log(cumplAlex);
