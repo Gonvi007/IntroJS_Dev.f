@@ -107,3 +107,21 @@ console.log(fecha.getUTCDate());
 console.log(Date.now());
 let cumplAlex = new Date(1999,4,10)
 console.log(cumplAlex);
+
+console.clear();
+
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.abs(-7.8));
+console.log(Math.ceil(7.32567891));
+console.log(Math.floor(7.24567));
+// Es mejor usar este para redondear al mas cercano
+console.log(Math.round(7.2));
+// Raiz cuadrada
+console.log(Math.sqrt(8));
+// Elevacion
+console.log(Math.pow(2,5));
+// Da referencia si es numero negativo o posivivo
+console.log(Math.sign(-7.8));
+console.log(Math.random());
+console.log(Math.round(MathMLElement.random()*1000));
