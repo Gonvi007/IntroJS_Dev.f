@@ -125,3 +125,62 @@ console.log(Math.pow(2,5));
 console.log(Math.sign(-7.8));
 console.log(Math.random());
 console.log(Math.round(MathMLElement.random()*1000));
+
+console.clear();
+
+/*
+
+CortoCircuito OR - Cuando el valor de la izquierda en la 
+expresión siempre pueda validar a true, es el valor que
+se cargará por defecto.
+
+ContoCircuito AND -Cuando el valor de la izquiera en la 
+expresión siempre peuda validar a false, es el valor que
+ se cargará por defecto.
+
+*/
+
+/* 
+Antes se hacia
+function saluadr (nombre) {
+    nombre = nombre || "Desconocido";
+    console.log(`Hola ${nombre}`);
+}
+*/
+
+function saluadr (nombre = "Desconocido") {
+    console.log(`Hola ${nombre}`);
+}
+
+saluadr("Alex");
+saluadr();
+
+/*
+CortoCircuito OR - Cuando el valor de la izquierda en la 
+expresión siempre pueda validar a true, es el valor que
+se cargará por defecto.
+*/
+console.log("cadena"||"Valor de la derecha");
+console.log(19 || "Valor de la derecha");
+console.log(true || "Valor de la derecha");
+console.log([] || "Valor de la derecha");
+console.log({} || "Valor de la derecha");
+console.log(false || "Valor de la derecha");
+console.log(null || "Valor de la derecha");
+console.log(undefined || "Valor de la derecha");
+console.log("" || "Valor de la derecha");
+console.log(-2 || "Valor de la derecha");
+console.log(0 || "Valor de la derecha");
+
+/*
+ContoCircuito AND -Cuando el valor de la izquiera en la 
+expresión siempre peuda validar a false, es el valor que
+ se cargará por defecto.
+*/
+
+console.log(false && "Valor de la derecha");
+console.log(null && "Valor de la derecha");
+console.log(undefined && "Valor de la derecha");
+console.log("" && "Valor de la derecha");
+console.log(-2 && "Valor de la derecha");
+console.log(0 && "Valor de la derecha");
