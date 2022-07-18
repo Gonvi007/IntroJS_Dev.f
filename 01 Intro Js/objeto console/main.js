@@ -127,7 +127,6 @@ console.log(Math.random());
 console.log(Math.round(MathMLElement.random()*1000));
 
 console.clear();
-
 /*
 
 CortoCircuito OR - Cuando el valor de la izquierda en la 
@@ -184,3 +183,25 @@ console.log(undefined && "Valor de la derecha");
 console.log("" && "Valor de la derecha");
 console.log(-2 && "Valor de la derecha");
 console.log(0 && "Valor de la derecha");
+
+console.clear();
+/*
+console.log(window);
+window.alert("Hola esto es un alerta");
+window.confirm("Hola esto es una confirmación");
+window.prompt("Hola esto es un Aviso y le permite al usuario ingresar un valor");
+
+// Ya no es necesario poner el "window." al inicio
+alert("Hola esto es un alerta");
+confirm("Hola esto es una confirmación");
+prompt("Hola esto es un Aviso y le permite al usuario ingresar un valor");
+*/
+
+let alerta = alert("Hola esto es un alerta");
+confirmacion = confirm("Hola esto es una confirmación");
+aviso = prompt("Hola esto es un Aviso y le permite al usuario ingresar un valor");
+
+// No es necesario meterla en una variable al alert
+console.log(alerta);
+console.log(confirmacion);
+console.log(Aviso);

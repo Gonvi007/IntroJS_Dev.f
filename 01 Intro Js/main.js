@@ -30,6 +30,8 @@
 
 // console.log("Hola, "+ prompt("Cual es tu nombre"))
 
+/*
+
 // variable de tipo string
 var nombreDeUsuario = "Francisco"
 
@@ -77,3 +79,6 @@ console.log("Modulo de 4 / 2 es:", modulo)
 var exponencial = 2**2
 console.log("Exponencial de 2**2 es:", exponencial)
 
+console.clear();
+
+*/
