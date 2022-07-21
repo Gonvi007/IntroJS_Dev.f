@@ -96,3 +96,39 @@ console.log(colores);
 colores.forEach(function(el) {
     console.log('<li id ="${index}">${}el</li>')
 });
+
+// Funciones Anónimas Autoejecutables.
+// Aqui si es obligatorio en ";"
+
+(function () {
+    console.log("Mi primer IIFE");
+})();
+
+(function (d, w, c) {
+    console.log("Mi segunda IIFE");
+    console.log(d);
+    console.log(w);
+    c.log("Este es un console.log");
+})(document, window, console);
+
+// Formas de escribir las funciones Anónimas Autoejecutables
+
+// Clásica
+(function (){
+    console.log('versión Clásica');
+});
+
+// La Crockford (JavaScript The Good Parts)
+((function (){
+    console.log('Versión Crockford');
+}));
+
+// Unaria
++function (){
+    console.log('Versión Unaria');
+}();
+
+// Facebook
+!function () {
+    console.log('Versión Facebook');
+}();
