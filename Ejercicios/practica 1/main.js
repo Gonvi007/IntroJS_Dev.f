@@ -17,8 +17,7 @@ const contarCaracteres = (cadena = "") =>
     ? console.warn("No ingresaste ninguna cadena morro")
     : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres.`);
 
-// contarCaracteres();
-// contarCaracteres("Hola Mundo");
+// contarCaracteres(); 
 
 
 
@@ -41,11 +40,15 @@ console.log("Ejercicio: 2");
     const recortarTexto = (cadena = "", longitud = undefined) =>
       (!cadena)
         ? console.warm("No ingresaste texto")
-        : console.info(cadena.slice(0,longitud));
+        :(longitud === undefined)
+          ? console.warm("No ingresaste la longitud para recortar el texto")
+          : console.info(cadena.slice(0,longitud));
 
 
-    recortarTexto("Hola mundanos", 4)
-
+    recortarTexto("Hola mundanos", 4);
+    recortarTexto();
+    recortarTexto("Hola Hola");
+    recortarTexto("", 5);
 
 
 /*
