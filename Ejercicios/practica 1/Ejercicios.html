@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ejercicios</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		/*
+1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+*/
+
+// function contarCaracteres(cadena = ""){
+//   if (!cadena) {
+//     console.warn("No ingresaste ninguna cadena morro");
+//   } else {
+//     console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres.`);
+//   }
+// }
+
+const contarCaracteres = (cadena = "") =>
+  (!cadena)
+    ? console.warn("No ingresaste ninguna cadena morro")
+    : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres.`);
+
+// contarCaracteres(); 
+// contarCaracteres("Hola mundo");
+
+
+
+
+
+
+/*
+2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+*/
+  const recortarTexto = (cadena = "", longitud = undefined) =>
+  (!cadena) 
+  	? console.warn("No ingresaste texto")
+  	: (longitud === undefined)
+  		? console.warn("No ingresastela longitud para recortar el texto")
+  		: console.info(cadena.slice(0, longitud))
+
+  // recortarTexto("Hola mundo", 7);
+  // recortarTexto();
+  // recortarTexto("Hola Hola");
+  // recortarTexto("", 3);
+
+
+
+
+
+
+/*
+3) Programa una función que dada una String te devuelva un 
+Array de textos separados por cierto caracter, pe. miFuncion
+('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+*/
+const cadenaAArreglo = (cadena = "", separador = undefined) =>
+	(!cadena)
+		? console.warn("No ingresaste texto")
+  		: (separador === undefined)
+  			? console.warn("No ingresasteel caracter separador")
+  			: console.info(cadena.split(separador));
+
+/*
+  	cadenaAArreglo("Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.", " ");
+  	cadenaAArreglo("Ene,Feb,Mar,May,Jun,Jul,Ago,Sep,Oct,Nov,Dic", ",");
+  	cadenaAArreglo();
+*/
+
+
+
+
+
+
+/*
+4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+*/
+
+const repetirTexto = (texto = "", veces = undefined) => {
+	if (!texto) return console.warn("No ingresaste un texto");
+
+	if (veces === undefined) return console.warn("No ingresaste el número de veces a repetir el texto");
+
+	if (veces === 0) return console.error("El número de veces no puede ser 0");
+
+	if (Math.sign(veces) === -1) return console.error("El número de veces no puede ser negativo");
+
+	for (let i = 1; i <= veces; i++)console.info(`${texto}, ${i}`);
+
+}
+repetirTexto("Hola Mundo", 3);
+repetirTexto("Hola Mundo", 0);
+repetirTexto("Hola Mundo", -11);
+repetirTexto("", 3);
+
+	</script>
+</body>
+</html>
